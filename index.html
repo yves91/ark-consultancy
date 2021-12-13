@@ -1,242 +1,252 @@
-<!DOCTYPE html>
 <html>
-<head>
+	<head>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Founded in 2012 Ark Consultancy is a fast-growing real estate consultancy agency based in Hoxton, London.">
+	<meta name="keywords" content="uk real estate, uk housing, uk properties, uk buy properties, uk commercial properties, uk housing properties, london estate agent, east london estate agent, london real estate consultancy, hoxton real estate, hoxton properties">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
 	
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css">
-
-<script>
-
-</script>
-
-<title>Ark Consultancy</title>
-
-</head>
-
-<body>
-
-<!--NAVBAR MENU-->
-<nav>  
-  <ul class="container">  
-  
-    <li>
-		<a href="#">
-		<img class="logo" src="https://yves91.github.io/ark-consultancy/assets/logo.png">
-		</a>
-	</li>  
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../ark-consultancy - new/style.css">
 	
-	<label id="navbarMenu" for="toggle">&#9776;</label>
-	<input type="checkbox" id="toggle">			
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	
-	<div class="container-menu">
-		<li id="menuItem"><a href="#about-us">About Us</a></li>  
-		<li id="menuItem"><a href="#our-team">Our Team</a></li>
-		<li id="menuItem"><a href="#properties">Properties</a></li>
-		<li id="menuItem"><a href="#book-consultancy">Book Consultancy</a></li>     
-		<li id="menuItem"><a href="#find-us">Find Us</a></li>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+	
+	<script src="../ark-consultancy - new/src/scripts/ajax-libs-aos-2.3.4-aos.js"></script>
+	<title>Ark Consultancy</title>
+	
+	</head>
+	
+	<body>
+	
+	<!-- Navbar - START -->
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#"><img class="logo" src="https://yves91.github.io/ark-consultancy/assets/main-logo-colour.png" alt=""></a>
+	
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="hamburger-icon">☰</span>
+		</button>
+	
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">	
+				<li id="menuItem"><a href="#about-us">About Us</a></li>  
+				<li id="menuItem"><a href="#our-team">Our Team</a></li>
+				<li id="menuItem"><a href="#properties">Properties</a></li>
+				<li id="menuItem"><a href="#book-consultancy">Book Consultancy</a></li>     
+				<li id="menuItem"><a href="#find-us">Find Us</a></li>
+				<li id="menuItem"><a href="#">&#9742; 08000 800 800</a></li>            
+			</ul>
+		</div>
+	
+	</nav>
+	
+	<!-- Navbar - END -->
+	
+	<!--HERO IMAGE-->
+	<div class="jumbotron">
+		<div class="jumbotext">
+			<h1>London's Calling</h1>
+			<p>Call or visit us today.</p>
+			<p class="lead">
+			<a class="btn btn-primary btn-lg" href="#properties" role="button" id="submitBtn">View Properties</a>
+			</p>
+		</div>
+	  </div>
+	<!--HERO IMAGE END-->
+	
+	<div class="row">
+		<div class="col-sm">		
+		<h2 id="about-us">About Us</h2>
+		</div>
 	</div>
 	
-  </ul>  
-</nav>
-<!--NAVBAR MENU END-->
+	<div class="row" data-aos="fade-up">
+		<div class="col-sm" id="#blockText">		
+			<p>Founded in 2012, we are a fast-growing real estate consultancy agency based in Hoxton, London. With over 80 years of combined experience in our team, we aim to help people and companies make the right choice when buying, selling or renting commercial and residential properties across the UK.</p>
+		</div>
+	</div>
+	
+	<div id="parallaxImage"></div>
 
+	
+	<div class="row">
+		<div class="col-sm">		
+			<h2 id="our-team">Our Team</h2>
+		</div>
+	</div>
+	
+	<div class="row" data-aos="fade-up">
+		<div class="col-lg">
+			<h3>Robert Martin, CEO</h3>
+			<br><br><p class="employee" id="employeeBlock"></p>
+			<div id="person"><img src="https://yves91.github.io/ark-consultancy/assets/ceo.png"></div>
+		</div>
 
-<!--HERO IMAGE-->
-<div class="heroImage">
-	<a href="#properties"><button class="heroTitle">View our latest properties</button></a>
-</div>
-<!--HERO IMAGE END-->
+		<div class="col-lg">
+			<h3>Sarah Ansah, CFO</h3>
+			<br><br><p class="employee" id="employeeBlock"></p>
+			<div id="person"><img src="https://yves91.github.io/ark-consultancy/assets/cfo.png"></div>
+		</div>
 
-
-<div class="container" id="sectionTitle">
-	<h2 id="about-us">About Us</h2>
-</div>
-
-
-<div class="container" id="blockText">
-	<p>Founded in 2012, we are a fast-growing real estate consultancy agency based in Hoxton, London. With over 80 years of combined experience in our team, we aim to help people and companies make the right choice when buying, selling or renting commercial and residential properties across the UK.</p>
-</div>
-
-
-<div class="container" id="parallaxImage">
-</div>
-
-
-<div class="container" id="sectionTitle">
-	<h2 id="our-team">Our Team</h2>
-</div>
-
-
-
-<div class="container" id="eBlock">
-
-	<div>
-		<h3>Robert Martin, CEO</h3>
-		<br><br><p class="employee" id="employeeBlock"></p>
-		<div id="person"><img src="https://yves91.github.io/ark-consultancy/assets/ceo.png"></div>
+		<div class="col-lg">
+			<h3>Andy Mur, CMO</h3>
+			<br><br><p class="employee" id="employeeBlock"></p>
+			<div id="person"><img src="https://yves91.github.io/ark-consultancy/assets/cmo.png"></div>
+		</div>
 	</div>
 
-	<div>
-		<h3>Sarah Ansah, CFO</h3>
-		<br><br><p class="employee" id="employeeBlock"></p>
-		<div id="person"><img src="https://yves91.github.io/ark-consultancy/assets/cfo.png"></div>
+	<div class="row" data-aos="fade-up">
+		<div class="col-lg">
+			<h3>Darren Keane, Consultant</h3>
+			<br><br><p class="employee" id="employeeBlock"></p>
+			<div id="person"><img src="https://yves91.github.io/ark-consultancy/assets/consultant1.png"></div>
+		</div>
+
+		<div class="col-lg">
+			<h3>Florence Higgins, Consultant</h3>
+			<br><br><p class="employee" id="employeeBlock"></p>
+			<div id="person"><img src="https://yves91.github.io/ark-consultancy/assets/consultant2.png"></div>
+		</div>
+
+		<div class="col-lg">
+			<h3>Andrea Murphy, Consultant</h3>
+			<br><br><p class="employee" id="employeeBlock"></p>
+			<div id="person"><img src="https://yves91.github.io/ark-consultancy/assets/consultant3.png"></div>
+		</div>
+	
+	</div>
+	
+	<div id="parallaxImage2"></div>
+	
+	<div class="row">
+		<div class="col-sm">		
+			<h2 id="properties">Properties</h2>
+		</div>
 	</div>
 
+	<div class="row" data-aos="fade-up">
+		<div class="col-lg">
+			<img src="https://yves91.github.io/ark-consultancy/assets/view-property.png">
+			<h3>Residential property</h3>
+			<p>Larkhall Road</p>
+			<p>London, W10</p><br>
+			<p><input type="submit" value="View property" id="submitBtn"></p>
+		</div>
+
+		<div class="col-lg">
+			<img src="https://yves91.github.io/ark-consultancy/assets/view-property2.png">
+			<h3>Residential property</h3>
+			<p>Teller Street</p>
+			<p>London, E5</p><br>
+			<p><input type="submit" value="View property" id="submitBtn"></p>
+		</div>
+
+		<div class="col-lg">
+			<img src="https://yves91.github.io/ark-consultancy/assets/view-property.png">
+			<h3>Residential property</h3>
+			<p>Maxwell Road</p>
+			<p>London, EN3</p><br>
+			<p><input type="submit" value="View property" id="submitBtn"></p>
+		</div>
+	
+	</div>
+
+	<div class="row" data-aos="fade-up">
+		<div class="col-lg">
+			<img src="https://yves91.github.io/ark-consultancy/assets/view-property-office.png">
+			<h3>Commercial property</h3>
+			<p>River Road</p>
+			<p>London, SW4</p><br>
+			<p><input type="submit" value="View property" id="submitBtn"></p>
+		</div>
+
+		<div class="col-lg">
+			<img src="https://yves91.github.io/ark-consultancy/assets/view-property-office2.png">
+			<h3>Commercial property</h3>
+			<p>Lombard Road</p>
+			<p>London, N4</p><br>
+			<p><input type="submit" value="View property" id="submitBtn"></p>
+		</div>
+
+		<div class="col-lg">
+			<img src="https://yves91.github.io/ark-consultancy/assets/view-property-office3.png">
+			<h3>Commercial property</h3>
+			<p>Dunhill Road</p>
+			<p>Birmingham, B1</p><br>
+			<p><input type="submit" value="View property" id="submitBtn"></p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm">
+			<h2 id="book-consultancy">Book Consultancy</h2>
+		</div>
+	</div>
 		
-	<div>
-		<h3>Andy Mur, CMO</h3>
-		<br><br><p class="employee" id="employeeBlock"></p>
-		<div id="person"><img src="https://yves91.github.io/ark-consultancy/assets/cmo.png"></div>
-	</div>
-
-</div>
-
-<div class="container" id="eBlock">
-
-	<div>
-		<h3>Darren Keane, Consultant</h3>
-		<br><br><p class="employee" id="employeeBlock"></p>
-		<div id="person"><img src="https://yves91.github.io/ark-consultancy/assets/consultant1.png"></div>
-	</div>
-
-	<div>
-		<h3>Florence Higgins, Consultant</h3>
-		<br><br><p class="employee" id="employeeBlock"></p>
-		<div id="person"><img src="https://yves91.github.io/ark-consultancy/assets/consultant2.png"></div>
-	</div>
-
+	<div class="row">
+		<div class="col-sm" data-aos="fade-up">
+			<form>
+				<div class="form-group">
+				<label for="firstName">First name</label>
+				<input type="text" class="form-control" id="inputFirstName"  placeholder="First name">
+				</div>
 		
-	<div>
-		<h3>Andrea Murphy, Consultant</h3>
-		<br><br><p class="employee" id="employeeBlock"></p>
-		<div id="person"><img src="https://yves91.github.io/ark-consultancy/assets/consultant3.png"></div>
+				<div class="form-group">
+				<label for="surname">Surname</label>
+				<input type="text" class="form-control" id="inputSurname" placeholder="Surname">
+				</div>
+
+				<div class="form-group">
+				<label for="email">Email</label>
+				<input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="Email">
+				</div>
+
+				<button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
+
+			</form>
+		</div>
 	</div>
-
-</div>
-
-<div class="container" id="parallaxImage2">
-</div>
-
-
-<div class="container" id="sectionTitle">
-	<h2 id="properties">Properties</h2>
-</div>
-
-<div class="container" id="eBlock">
-
-	<div>
-		<br><br><p class="employee" id="employeeBlock"></p>
-		<div id="person"><img src="https://yves91.github.io/ark-consultancy/assets/view-property.png"></div>
-		<h3>Residential property</h3>
-		<p>Larkhall Road</p>
-		<p>London, W10</p><br>
-		<p><input type="submit" value="View property" id="submitBtn"></p>
+	  
+	<div class="row">
+		<div class="col-sm">
+			<h2 id="find-us">Find Us</h2>
+		</div>
 	</div>
-
-	<div>
-		<br><br><p class="employee" id="employeeBlock"></p>
-		<div id="person"><img src="https://yves91.github.io/ark-consultancy/assets/view-property2.png"></div>
-		<h3>Residential property</h3>
-		<p>Teller Street</p>
-		<p>London, E5</p><br>
-		<p><input type="submit" value="View property" id="submitBtn"></p>
-	</div>
-
-		
-	<div>
-		<br><br><p class="employee" id="employeeBlock"></p>
-		<div id="person"><img src="https://yves91.github.io/ark-consultancy/assets/view-property.png"></div>
-		<h3>Residential property</h3>
-		<p>Maxwell Road</p>
-		<p>London, EN3</p><br>
-		<p><input type="submit" value="View property" id="submitBtn"></p>
-	</div>
-
-</div>
-
-
-<div class="container" id="eBlock">
-
-	<div>
-		<br><br><p class="employee" id="employeeBlock"></p>
-		<div id="person"><img src="https://yves91.github.io/ark-consultancy/assets/view-property-office.png"></div>
-		<h3>Commercial property</h3>
-		<p>River Road</p>
-		<p>London, SW4</p><br>
-		<p><input type="submit" value="View property" id="submitBtn"></p>
-	</div>
-
-	<div>
-		<br><br><p class="employee" id="employeeBlock"></p>
-		<div id="person"><img src="https://yves91.github.io/ark-consultancy/assets/view-property-office2.png"></div>
-		<h3>Commercial property</h3>
-		<p>Lombard Road</p>
-		<p>London, N4</p><br>
-		<p><input type="submit" value="View property" id="submitBtn"></p>
-	</div>
-
-		
-	<div>
-		<br><br><p class="employee" id="employeeBlock"></p>
-		<div id="person"><img src="https://yves91.github.io/ark-consultancy/assets/view-property-office3.png"></div>
-		<h3>Commercial property</h3>
-		<p>Dunhill Road</p>
-		<p>Birmingham, B1</p><br>
-		<p><input type="submit" value="View property" id="submitBtn"></p>
-	</div>
-
-</div>
-
-<div class="container" id="sectionTitle">
-	<h2 id="book-consultancy">Book Consultancy</h2>
-</div>
-
-
-<div class="container" id="bookConsultancy">
-	<form action="#">
 	
-	  <label for="fname">First name:</label><br>
-	  <input type="text" id="fname" name="fname" value="" required><br><br>
-	  
-	  <label for="lname">Surname:</label><br>
-	  <input type="text" id="lname" name="lname" value="" required><br><br>	
-	  
-	  <label for="email">Email address:</label><br>
-	  <input type="text" id="email" name="email" value="" required><br><br>
-	  
-	  <label for="number">Phone  number:</label><br>
-	  <input type="text" id="number" name="number" value="" required><br><br>
-	  
-	  <input type="submit" value="Submit" id="submitBtn">
-	</form> 
-</div>
+	<div class="row">
+		<div class="col-sm" data-aos="fade-up">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1241.083198512053!2d-0.09016420913022995!3d51.528507797666094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ca691f8e4b1%3A0x42beac1c88022524!2sEbenezer%20St%2C%20Hoxton%2C%20London%2C%20UK!5e0!3m2!1sen!2ssc!4v1613945112998!5m2!1sen!2ssc" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		</div>	
+	</div>
 
-<div class="container" id="sectionTitle">
-	<h2 id="find-us">Find Us</h2>
-</div>
+	<div class="col-sm" id="companyContact">
+		<div>
+			<p>Address: 150 Ebenezer Street, Hoxton, N1 7NP</p><br>
+			<p>Contact: arkconsultancy@gmail.com</p>
+		</div>
+	</div>
 
-<div class="container" >
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1241.083198512053!2d-0.09016420913022995!3d51.528507797666094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ca691f8e4b1%3A0x42beac1c88022524!2sEbenezer%20St%2C%20Hoxton%2C%20London%2C%20UK!5e0!3m2!1sen!2ssc!4v1613945112998!5m2!1sen!2ssc" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+	<br><br>
+	
+	<div div class="col-sm" id="footer">
+		<div>
+			<img src="https://yves91.github.io/ark-consultancy/assets/main-logo-white.png">
+			<p class="designedBy">Yves Fostel Web Designs</p>
+		</div>
+	</div>
+	
+	<!--Script for scroll reveal effect-->
+	<script async>
+		AOS.init();
+	</script>
 
-<div id="companyContact">
-	<p>Address: 150 Ebenezer Street, Hoxton, N1 7NP</p><br>
-	<p>Contact: arkconsultancy@gmail.com</p>
-</div>
-<br><br>
-
-
-<div class="container" id="footer">
-	<p>Yves Fostel Designs</p>
-</div>
-
-
-
-
-</body>
-
+	</body>
 </html>
